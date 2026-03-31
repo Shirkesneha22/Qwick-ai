@@ -32,9 +32,9 @@
 }
 
 /* Pseudo backgrounds using CSS gradients for placeholders over abstract images */
-.feature-1 { background: linear-gradient(135deg, #090815, #110E24); }
-.feature-2 { background: linear-gradient(135deg, #090810, #0B1321); }
-.feature-3 { background: linear-gradient(135deg, #070D14, #061110); }
+.feature-1 { background-image: url('../assets/images/Advocate.jpg'); }
+.feature-2 { background-image: url('../assets/images/CA.jpg'); }
+.feature-3 { background-image: url('../assets/images/tours.jpg'); }
 
 .hover-overlay-mint {
     position: absolute;
