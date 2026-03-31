@@ -34,8 +34,7 @@
     max-width: 1280px;
     width: 100%;
     padding: 0 40px;
-    margin-top: 140px; /* Reduced offset */
-    margin-bottom: 40px; /* Reduced space */
+    margin-top: 80px; /* Reduced offset */
 }
 
 /* Word wrapping for GSAP stagger */
