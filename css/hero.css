@@ -1,12 +1,12 @@
 /* css/hero.css */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     background-image: linear-gradient(rgba(3, 1, 10, 0.8), rgba(3, 1, 10, 0.4)), url('../assets/images/Hero.png');
     background-size: cover;
     background-position: center;
@@ -29,13 +29,13 @@
 
 .hero-container {
     position: relative;
-    z-index: var(--z-base);
+    z-index: var(--z-above);
     text-align: left;
     max-width: 1280px;
     width: 100%;
     padding: 0 40px;
-    margin-top: 180px; /* Offset for navbar and extra padding */
-    margin-bottom: 80px; /* Space between stats and bottom of section */
+    margin-top: 140px; /* Reduced offset */
+    margin-bottom: 40px; /* Reduced space */
 }
 
 /* Word wrapping for GSAP stagger */
@@ -51,14 +51,14 @@
 .hero-ctas {
     display: flex;
     gap: 16px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .hero-stats {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .stat-item {
