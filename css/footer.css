@@ -1,0 +1,54 @@
+/* css/footer.css */
+.footer {
+    background-color: var(--clr-bg);
+    border-top: 1px solid rgba(127, 237, 216, 0.15); /* Mint at 15% opacity */
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.footer-logo img {
+    margin-bottom: 8px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: var(--clr-muted);
+}
+
+.footer-links {
+    display: flex;
+    gap: 32px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: var(--clr-muted);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--clr-white);
+}
+
+.footer-right p {
+    font-size: 14px;
+    color: var(--clr-muted);
+}
+
+.footer-easter-egg {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(232, 230, 240, 0.1); /* Very muted text */
+    transition: color var(--transition-medium);
+    cursor: default;
+}
+
+.footer-easter-egg:hover {
+    color: var(--clr-accent);
+}

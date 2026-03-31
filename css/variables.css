@@ -1,0 +1,39 @@
+/* css/variables.css */
+:root {
+    /* Brand Colors */
+    --clr-bg: #03010A;
+    --clr-surface: #080614;
+    --clr-accent: #7FEDD8;
+    --clr-accent-dark: #2DC7A8;
+    --clr-white: #FFFFFF;
+    
+    /* Transparent/Muted Colors */
+    --clr-muted: rgba(232, 230, 240, 0.7);
+    --clr-card-bg: rgba(255, 255, 255, 0.03);
+    --clr-card-border: rgba(255, 255, 255, 0.07);
+    --clr-mint-soft: rgba(127, 237, 216, 0.08);
+    --clr-mint-border: rgba(127, 237, 216, 0.18);
+    --clr-nav-bg: rgba(3, 1, 10, 0.7);
+    
+    /* Typography */
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    
+    /* Border Radius */
+    --radius-card: 16px;
+    --radius-pill: 100px;
+    --radius-small: 12px;
+    --radius-testimonial: 20px;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.4s ease;
+    --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    
+    /* Z-indexes */
+    --z-base: 1;
+    --z-above: 10;
+    --z-nav: 100;
+    --z-overlay: 200;
+    --z-cursor: 9999;
+}

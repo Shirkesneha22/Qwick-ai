@@ -1,0 +1,53 @@
+/* css/typography.css */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--clr-white);
+    letter-spacing: -0.02em;
+}
+
+.hero-title {
+    font-size: clamp(42px, 8vw, 72px);
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    margin-top: 30px;
+    line-height: 1.2;
+}
+
+.section-title {
+    font-size: clamp(36px, 5vw, 42px);
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.accent-text {
+    color: var(--clr-accent);
+}
+
+.hero-sub {
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--clr-muted);
+    font-size: clamp(16px, 2vw, 18px);
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.section-tag {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--clr-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+}
+
+.stat-label, .service-desc, .project-desc, .about-body, .custom-sub {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 18px);
+    line-height: 1.6;
+    color: var(--clr-muted);
+}

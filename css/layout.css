@@ -1,0 +1,35 @@
+/* css/layout.css */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+section > .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 24px;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    section > .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+/* Base flex/grid helpers if needed */
+.d-flex { display: flex; }
+.align-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }

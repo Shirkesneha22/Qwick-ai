@@ -1,0 +1,55 @@
+/* css/about.css */
+.about {
+    background-color: var(--clr-surface);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-visual {
+    position: relative;
+    height: 500px;
+    background-color: var(--clr-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-logo {
+    max-width: 80%;
+    width: 320px;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(127, 237, 216, 0.15));
+    transition: transform var(--transition-medium);
+}
+
+.about-visual:hover .about-logo {
+    transform: scale(1.05);
+}
+
+/* About Content */
+.about-body {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.about-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.pill {
+    padding: 8px 20px;
+    border: 1px solid var(--clr-card-border);
+    border-radius: var(--radius-pill);
+    font-size: 14px;
+    color: var(--clr-muted);
+}

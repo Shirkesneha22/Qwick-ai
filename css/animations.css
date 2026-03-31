@@ -1,0 +1,46 @@
+/* css/animations.css */
+
+/* Marquee infinite scroll animation */
+.marquee-band {
+    width: 100%;
+    background-color: #0b091c; /* Lighter navy */
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid var(--clr-card-border);
+    border-bottom: 1px solid var(--clr-card-border);
+    display: flex;
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+    animation: marqueeScroll 20s linear infinite;
+    align-items: center;
+}
+
+.marquee-content span {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    color: var(--clr-accent);
+    padding: 0 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.marquee-content .dot {
+    padding: 0;
+    color: var(--clr-white);
+    opacity: 0.3;
+}
+
+.marquee-band:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Requires duplicated content in HTML so it is seamless */
+}
+
+/* Base states for GSAP scroll reveals handled by JS now */

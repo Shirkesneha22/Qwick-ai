@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#03010A">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Qwick AI — Build fast. Think smart.">
+    <meta property="og:description" content="Websites, Android Apps, AI Agents built fast and smartly.">
+    <meta property="og:image" content="assets/images/og-image.png">
+    <meta property="og:url" content="https://qwick-ai.com">
+    <meta property="og:type" content="website">
+
+    <title>Qwick AI — Build fast. Think smart.</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/browserlogo.png">
+    <link rel="icon" href="assets/images/browserlogo.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Structure -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Qwick AI" height="48" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'48\'><text x=\'0\' y=\'36\' fill=\'#FFFFFF\' font-family=\'Syne\' font-size=\'32\' font-weight=\'800\'>Qwick AI</text><circle cx=\'145\' cy=\'26\' r=\'8\' fill=\'#7FEDD8\'/></svg>'">
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a><div class="nav-dot"></div></li>
+                <li><a href="#services">Services</a><div class="nav-dot"></div></li>
+                <li><a href="#work">Work</a><div class="nav-dot"></div></li>
+                <li><a href="#about">About</a><div class="nav-dot"></div></li>
+                <li><a href="#contact">Contact</a><div class="nav-dot"></div></li>
+            </ul>
+
+            <a href="#contact" class="btn-primary nav-cta">Let's Talk &rarr;</a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <button class="menu-close" id="menu-close">&times;</button>
+        <div class="mobile-links-container">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-blob"></div>
+            <div class="hero-container">
+                <!-- H1 wrapped for stagger animation -->
+                <h1 class="hero-title">
+                    <span class="word-wrap"><span class="word">We</span></span> 
+                    <span class="word-wrap"><span class="word">Build</span></span><br>
+                    <span class="word-wrap"><span class="word">Digital</span></span><br>
+                    <span class="word-wrap"><span class="word accent-text">That</span></span> 
+                    <span class="word-wrap"><span class="word accent-text">Moves.</span></span>
+                </h1>
+                <p class="hero-sub">Websites. Android Apps. AI Agents. Built fast, built smart &mdash; for founders who don't wait.</p>
+                
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn-primary btn-large cursor-hover">Start a Project &rarr;</a>
+                    <a href="#work" class="btn-ghost btn-large cursor-hover">See Our Work</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-num"><span class="counter" data-target="20">0</span>+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-num"><span class="counter" data-target="15">0</span>+</div>
+                        <div class="stat-label">Clients</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-num"><span class="counter" data-target="3">0</span></div>
+                        <div class="stat-label">Services</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <div class="scroll-text">Scroll</div>
+            </div>
+        </section>
+
+        <!-- Marquee / Ticker Band -->
+        <div class="marquee-band">
+            <div class="marquee-content">
+                <span>Websites</span><span class="dot">&middot;</span>
+                <span>Android Apps</span><span class="dot">&middot;</span>
+                <span>AI Agents</span><span class="dot">&middot;</span>
+                <span>Fast Delivery</span><span class="dot">&middot;</span>
+                <span>Clean Code</span><span class="dot">&middot;</span>
+                <span>Smart Automation</span><span class="dot">&middot;</span>
+                <!-- Repeated for infinite scroll seamless -->
+                <span>Websites</span><span class="dot">&middot;</span>
+                <span>Android Apps</span><span class="dot">&middot;</span>
+                <span>AI Agents</span><span class="dot">&middot;</span>
+                <span>Fast Delivery</span><span class="dot">&middot;</span>
+                <span>Clean Code</span><span class="dot">&middot;</span>
+                <span>Smart Automation</span><span class="dot">&middot;</span>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section class="services section-padding" id="services">
+            <div class="container section-revealer">
+                <div class="section-tag">&mdash; What We Do</div>
+                <h2 class="section-title">We build things <span class="accent-text">that work.</span></h2>
+                
+                <div class="services-grid">
+                    <div class="service-card cursor-hover service-card-stagger">
+                        <div class="service-num">01</div>
+                        <div class="service-icon">
+                            <!-- Website Icon -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7FEDD8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="service-title">Websites</h3>
+                        <p class="service-desc">High-converting, modern websites built for speed and performance. From landing pages to full-scale web apps, optimized for SEO and user experience.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Webflow</span>
+                        </div>
+                        <div class="hover-arrow">&UpperRightArrow;</div>
+                    </div>
+
+                    <div class="service-card cursor-hover service-card-stagger">
+                        <div class="service-num">02</div>
+                        <div class="service-icon">
+                            <!-- Android App Icon -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7FEDD8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        </div>
+                        <h3 class="service-title">Android Apps</h3>
+                        <p class="service-desc">Smooth, scalable mobile applications designed for real users. Built using modern frameworks with performance and UI in mind.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Kotlin</span>
+                        </div>
+                        <div class="hover-arrow">&UpperRightArrow;</div>
+                    </div>
+
+                    <div class="service-card cursor-hover service-card-stagger">
+                        <div class="service-num">03</div>
+                        <div class="service-icon">
+                            <!-- AI Agent Icon -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7FEDD8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        </div>
+                        <h3 class="service-title">AI Agents</h3>
+                        <p class="service-desc">Automate your workflows with custom AI agents powered by LLMs. Save time, reduce manual work, and scale faster.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <div class="hover-arrow">&UpperRightArrow;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section class="work section-padding" id="work">
+            <div class="container section-revealer">
+                <div class="section-tag">&mdash; Our Work</div>
+                <h2 class="section-title">Projects that <span class="accent-text">speak louder.</span></h2>
+
+                <div class="bento-grid">
+                    <!-- Large featured project -->
+                    <div class="bento-card bento-large cursor-hover feature-card-stagger">
+                        <div class="card-bg feature-1"></div>
+                        <div class="card-content">
+                            <div class="project-cat">Website</div>
+                            <h3 class="project-name">UrbanEats</h3>
+                            <p class="project-desc">A modern food delivery platform with real-time tracking and seamless UI.</p>
+                            <a href="#" class="view-link">View &rarr;</a>
+                        </div>
+                        <div class="hover-overlay-mint"></div>
+                    </div>
+
+                    <!-- Medium project 1 -->
+                    <div class="bento-card bento-medium cursor-hover feature-card-stagger">
+                        <div class="card-bg feature-2"></div>
+                        <div class="card-content">
+                            <div class="project-cat">Android App</div>
+                            <h3 class="project-name">PayFlow</h3>
+                            <p class="project-desc">A fintech mobile app designed for fast, secure transactions.</p>
+                            <a href="#" class="view-link">View &rarr;</a>
+                        </div>
+                        <div class="hover-overlay-mint"></div>
+                    </div>
+
+                    <!-- Medium project 2 -->
+                    <div class="bento-card bento-medium cursor-hover feature-card-stagger">
+                        <div class="card-bg feature-3"></div>
+                        <div class="card-content">
+                            <div class="project-cat">AI Agent</div>
+                            <h3 class="project-name">Deskly AI</h3>
+                            <p class="project-desc">An AI assistant that automates scheduling and daily workflows.</p>
+                            <a href="#" class="view-link">View &rarr;</a>
+                        </div>
+                        <div class="hover-overlay-mint"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual cursor-hover section-revealer">
+                        <img src="assets/images/logo.png" alt="Qwick AI Logo" class="about-logo">
+                    </div>
+                    
+                    <div class="about-content section-revealer">
+                        <div class="section-tag">&mdash; About Company</div>
+                        <h2 class="section-title">Built for <span class="accent-text">speed &amp; scale.</span></h2>
+                        <p class="about-body">Qwick AI is a modern development studio focused on building high-performance digital products. We specialize in delivering clean, scalable websites, apps, and custom AI solutions without unnecessary complexity.</p>
+                        <p class="about-body">We believe in speed, transparency, and building products that actually work.</p>
+                        
+                        <div class="about-pills">
+                            <span class="pill">Fast Delivery</span>
+                            <span class="pill">Websites</span>
+                            <span class="pill">Apps</span>
+                            <span class="pill">AI Agents</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section-padding" id="testimonials">
+            <div class="container section-revealer">
+                <div class="section-tag">&mdash; What Clients Say</div>
+                <h2 class="section-title">Real words, <span class="accent-text">real clients.</span></h2>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card testimonial-card-stagger">
+                        <div class="stars">
+                            &starf;&starf;&starf;&starf;&starf;
+                        </div>
+                        <p class="quote">"Qwick AI built our entire landing page in 4 days. Looked better than what agencies quoted us 6x the price for."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">R</div>
+                            <div class="client-details">
+                                <div class="client-name">Rahul M.</div>
+                                <div class="client-role">Founder, TechNova</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card testimonial-card-stagger">
+                        <div class="stars">
+                            &starf;&starf;&starf;&starf;&starf;
+                        </div>
+                        <p class="quote">"The AI agent they built saved us 3 hours a day. Genuinely impressive work."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">P</div>
+                            <div class="client-details">
+                                <div class="client-name">Priya S.</div>
+                                <div class="client-role">COO, Growify</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card testimonial-card-stagger">
+                        <div class="stars">
+                            &starf;&starf;&starf;&starf;&starf;
+                        </div>
+                        <p class="quote">"Fast, clean, and actually listened to what we wanted. Rare."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">A</div>
+                            <div class="client-details">
+                                <div class="client-name">Aditya K.</div>
+                                <div class="client-role">Product Lead, Stackbase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+            <div class="container section-revealer contact-form-anim">
+                <div class="contact-header">
+                    <div class="section-tag">&mdash; Get In Touch</div>
+                    <h2 class="section-title">Ready to build<br><span class="accent-text">something fast?</span></h2>
+                    <p class="contact-sub">Drop us a message. We usually respond within 12&ndash;24 hours.</p>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group full-width">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <select id="service" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="website">Website</option>
+                            <option value="android">Android App</option>
+                            <option value="ai">AI Agent</option>
+                            <option value="all">All Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="message" rows="4" placeholder="Tell us about your project" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit cursor-hover">Send Message &rarr;</button>
+                    <p class="contact-microcopy" style="text-align: center; margin-top: 12px; font-size: 14px; color: var(--clr-muted); font-family: var(--font-body);">No spam. Just a quick response.</p>
+                </form>
+
+                <div class="contact-direct">
+                    <a href="mailto:qwick.ai.solutions@gmail.com">qwick.ai.solutions@gmail.com</a> &middot; 
+                    <a href="https://www.instagram.com/qwickai?igsh=MTdlYWx4Y2V6OWRkMw==" target="_blank" rel="noopener noreferrer">Instagram</a> &middot; 
+                    <a href="https://www.linkedin.com/company/qwick-ai-solutions/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Qwick AI" height="36" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'36\'><text x=\'0\' y=\'26\' fill=\'#FFFFFF\' font-family=\'Syne\' font-size=\'24\' font-weight=\'800\'>Qwick AI</text></svg>'">
+                    </a>
+                    <p class="footer-tagline">Build fast. Think smart.</p>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#work">Work</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2025 Qwick AI. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="footer-easter-egg">
+                Made with &hearts; by Qwick-Ai 
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- JS Files -->
+    <script src="js/cursor.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/marquee.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>

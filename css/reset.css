@@ -1,0 +1,50 @@
+/* css/reset.css */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Hide scrollbar for cleaner look if requested, otherwise lean standard */
+}
+
+body {
+    background-color: var(--clr-bg);
+    color: var(--clr-white);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    /* Hide default cursor if using custom cursor */
+    cursor: none;
+}
+
+/* Ensure links and buttons have no cursor so custom cursor triggers cleanly */
+a, button, input, textarea, select {
+    cursor: none; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}

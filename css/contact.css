@@ -1,0 +1,95 @@
+/* css/contact.css */
+.contact {
+    background-color: var(--clr-mint-soft);
+    text-align: center;
+}
+
+.contact-header {
+    max-width: 600px;
+    margin: 0 auto 60px;
+}
+
+.contact-sub {
+    font-size: 18px;
+    color: var(--clr-muted);
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-group.half-width {
+    width: calc(50% - 10px);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: var(--clr-bg);
+    border: 1px solid var(--clr-card-border);
+    border-radius: 10px;
+    color: var(--clr-white);
+    font-family: var(--font-body);
+    font-size: 16px;
+    transition: all var(--transition-fast);
+}
+
+.contact-form select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(232, 230, 240, 0.3);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--clr-accent);
+    box-shadow: 0 0 0 4px rgba(127, 237, 216, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    font-size: 18px;
+    padding: 18px;
+    margin-top: 10px;
+}
+
+.contact-direct {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--clr-muted);
+    font-size: 14px;
+}
+
+.contact-direct a {
+    color: var(--clr-white);
+    transition: color var(--transition-fast);
+}
+
+.contact-direct a:hover {
+    color: var(--clr-accent);
+}

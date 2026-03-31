@@ -1,0 +1,90 @@
+/* css/services.css */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    gap: 32px;
+}
+
+.service-card {
+    position: relative;
+    padding: 40px;
+    background-color: var(--clr-surface);
+    border: 1px solid var(--clr-card-border);
+    border-radius: var(--radius-card);
+    transition: all var(--transition-medium);
+}
+
+.service-num {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-family: var(--font-heading);
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 24px;
+    transition: color var(--transition-fast);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--clr-mint-soft);
+    border-radius: var(--radius-small);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.service-title {
+    font-size: clamp(22px, 3vw, 26px);
+    margin-bottom: 12px;
+}
+
+.service-desc {
+    margin-bottom: 24px;
+    min-height: 72px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-pill);
+    color: var(--clr-white);
+    background-color: rgba(255,255,255,0.02);
+}
+
+.hover-arrow {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 24px;
+    color: var(--clr-accent);
+    opacity: 0;
+    transform: translate(-10px, 10px);
+    transition: all var(--transition-medium);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    background-color: var(--clr-card-bg);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2), inset 0 0 0 1px var(--clr-mint-border);
+    z-index: 2; /* elevated above borders */
+}
+
+.service-card:hover .service-num {
+    color: var(--clr-accent);
+}
+
+.service-card:hover .hover-arrow {
+    opacity: 1;
+    transform: translate(0, 0);
+}
